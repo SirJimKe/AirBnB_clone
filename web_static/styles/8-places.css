@@ -42,6 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3px;
 }
 
 .information {
@@ -50,7 +51,7 @@
     border-top: 1px solid #DDDDDD;
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 50px;
     justify-content: space-around;
 }
 
@@ -58,17 +59,34 @@
 .number_rooms,
 .number_bathrooms {
     width: 100px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-cover: 50%;
+    background-position: center;
+    position: relative;
+    justify-content: center;
 }
 
-.max_guest{
+.max_guest {
     background-image: url("../images/icon_group.png");
-    background-color: yellow;
 }
 
-.number_rooms{
+.number_rooms {
     background-image: url("../images/icon_bed.png");
 }
 
 .number_bathrooms {
     background-image: url("../images/icon_bath.png");
+}
+
+.number_details {
+    position: absolute;
+    bottom: 5px;
+    left: calc(20%);
+    margin: 0;
+}
+
+.user, .description {
+    text-align: left;
+    margin-top: 10px;
 }
